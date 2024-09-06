@@ -1,0 +1,91 @@
+
+body{
+    height: 100vh;    
+    width: 100vw; 
+}
+.main{
+    width: 66vw;
+    border: 5px groove rgb(28, 28, 28);
+    box-shadow: 10px 10px 15px rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    border-radius: 10px;
+}
+.left img{
+    width: 30vw;
+    height: 70vh;
+    object-fit: contain;
+    border-radius: 10px;
+    
+}
+
+.right{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-direction: column;
+    border: 5px inset gray;
+    height: 70vh;
+    border-radius: 20px;
+}
+.right img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 15px 0 0 0 ;
+}
+
+.right div{
+    
+    display: grid;
+    /* place-items: center; */
+    grid-template-columns: 35% 60%;
+}
+
+.right div input{
+    background-color: transparent;
+    border: 5px inset gray;
+    border-radius: 10px;
+    margin: 0 1vw;
+    /* width: 250px; */
+    outline: none;
+    transition: all .5s ease-in-out;
+    
+}
+.right div input:hover,
+.right div input:active{
+    transform: scale(1.05);
+    
+}
+
+.right div label,
+.right div .icon{
+    font-weight:500px ;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.password_input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+#already{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.already-link{
+    color: blue;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.already-link:hover{
+    text-decoration: underline;
+}
